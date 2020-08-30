@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <meta charset="UTF-8">
+    <title>Service Menu</title>
+</head>
+<body>
+    <ul>
+        {% for link, description in menu_choices.items %}
+        <li>
+            <a href="/get_ticket/{{ link }}">{{ description }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

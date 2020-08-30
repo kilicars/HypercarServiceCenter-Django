@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <meta charset="UTF-8">
+        <title>Next Customer</title>
+    </head>
+    <body>
+        {% if next_service_id %}
+            <div>Next ticket #{{ next_service_id }}</div>
+        {% else %}
+            <div>Waiting for the next client</div>
+        {% endif %}
+    </body>
+</html>

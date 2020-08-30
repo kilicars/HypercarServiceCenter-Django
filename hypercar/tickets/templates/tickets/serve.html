@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <meta charset="UTF-8">
+    <title>Service Info</title>
+</head>
+<body>
+    <div>Your number is {{ service_id }}</div>
+    <div>Please wait around {{ waiting_time }} minutes</div>
+</body>
+</html>
